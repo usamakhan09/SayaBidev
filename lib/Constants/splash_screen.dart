@@ -38,31 +38,6 @@ class SplashScreen extends StatelessWidget {
             ),
           )
         ],
-        // child: Column(
-        //   crossAxisAlignment: CrossAxisAlignment.center,
-        //   children: <Widget>[
-        // SizedBox(
-        //   height: MediaQuery.of(context).size.height * 0.1,
-        // ),
-        // Container(
-        //   height: MediaQuery.of(context).size.height * 0.5,
-        //   child: Image.asset('assets/logo.png'),
-        // ),
-        // Align(
-        //   alignment: Alignment.bottomCenter,
-        //   child: Text(
-        //     "LETS WORK TOGETHER",
-        //     style: GoogleFonts.poppins(
-        //       textStyle: TextStyle(
-        //         color: Theme.of(context).primaryColor,
-        //         fontSize: MediaQuery.of(context).size.height * 0.02,
-        //         fontWeight: FontWeight.bold,
-        //       ),
-        //     ),
-        //   ),
-        // )
-        // ],
-        // ),
       ),
     );
   }
