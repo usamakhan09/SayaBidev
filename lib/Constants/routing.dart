@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:sayabi_dev/Screens/chat_screen.dart';
 import 'package:sayabi_dev/Screens/home.dart';
 
 animateRoutes(var route) {
@@ -24,8 +25,8 @@ class RouteGenerator {
     switch (settings.name) {
       case '/':
         return animateRoutes(const Home());
-      // case '/favorite':
-      //   return animateRoutes(Favorites());
+      case '/chat':
+        return animateRoutes(const ChatScreen());
       // case '/orders':
       //   return animateRoutes(Order());
       // case '/profile':

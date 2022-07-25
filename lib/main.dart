@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:sayabi_dev/Constants/splash_screen.dart';
 import 'package:sayabi_dev/Screens/home.dart';
 
+import 'Constants/routing.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -15,6 +17,8 @@ class MyApp extends StatelessWidget {
       title: 'Sayabidevs',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(primaryColor: const Color.fromRGBO(231, 27, 3, 1)),
+      initialRoute: '/',
+      onGenerateRoute: RouteGenerator.generateRoute,
       home: AnimatedSplashScreen(
           nextScreen: const Home(),
           splash: const SplashScreen(),
