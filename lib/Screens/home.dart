@@ -161,7 +161,9 @@ class _HomeState extends State<Home> {
           height: MediaQuery.of(context).size.height * 0.08,
           child: FittedBox(
             child: FloatingActionButton(
-              onPressed: () {},
+              onPressed: () {
+                Navigator.of(context).pushNamed('/chat');
+              },
               backgroundColor: const Color(0xFFF37777),
               child: SizedBox(
                 height: MediaQuery.of(context).size.height * 0.1,
