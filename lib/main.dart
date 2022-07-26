@@ -20,11 +20,12 @@ class MyApp extends StatelessWidget {
       initialRoute: '/',
       onGenerateRoute: RouteGenerator.generateRoute,
       home: AnimatedSplashScreen(
-          nextScreen: const Home(),
-          splash: const SplashScreen(),
-          duration: 3000,
-          splashTransition: SplashTransition.fadeTransition,
-          splashIconSize: 500),
+        nextScreen: const Home(),
+        splash: const SplashScreen(),
+        duration: 3000,
+        splashTransition: SplashTransition.fadeTransition,
+        splashIconSize: 500,
+      ),
     );
   }
 }

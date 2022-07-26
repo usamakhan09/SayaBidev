@@ -23,7 +23,7 @@ animateRoutes(var route) {
 class RouteGenerator {
   static Route<dynamic> generateRoute(RouteSettings settings) {
     switch (settings.name) {
-      case '/':
+      case '/home':
         return animateRoutes(const Home());
       case '/chat':
         return animateRoutes(const ChatScreen());
