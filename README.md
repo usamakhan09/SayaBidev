@@ -1,6 +1,6 @@
 # SayaBidev
-App development internship tasks
-
-Splash Screen-> Wahaj Javed
-Home Screen-> Usama Khan
-Chat Screen-> Abdul Rehman
+SAYABI DEVS MOBILE APPLICATION
+Tasks Accomplished :
+1) Splash Screen-> Wahaj Javed
+2) Home Screen-> Usama Khan
+3) Chat Screen-> Abdul Rehman
