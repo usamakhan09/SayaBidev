@@ -1,4 +1,4 @@
-import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
 
 class ChatScreen extends StatefulWidget {
   const ChatScreen({Key? key}) : super(key: key);
@@ -10,6 +10,10 @@ class ChatScreen extends StatefulWidget {
 class _ChatScreenState extends State<ChatScreen> {
   @override
   Widget build(BuildContext context) {
-    return const Text('a');
+    return Scaffold(
+      body: ElevatedButton(
+          onPressed: () => Navigator.of(context).pushNamed('/home'),
+          child: Text("waapas")),
+    );
   }
 }
