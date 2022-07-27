@@ -55,7 +55,7 @@ class _HomeState extends State<Home> {
               ),
               SizedBox(
                 height: MediaQuery.of(context).size.height * 0.3,
-                child: Image.asset("assets/line.png"),
+                child: Image.asset("assets/images/line.png"),
               ),
               SizedBox(
                 height: MediaQuery.of(context).size.height * 0.05,
@@ -69,7 +69,7 @@ class _HomeState extends State<Home> {
                 width: double.infinity,
                 height: MediaQuery.of(context).size.height * 0.1,
                 child: DropdownButtonFormField<String>(
-                  icon: Image.asset("assets/circleUp.png"),
+                  icon: Image.asset("assets/images/circleUp.png"),
                   iconSize: MediaQuery.of(context).size.height * 0.1,
                   dropdownColor: const Color(0xffFDABAB),
                   iconEnabledColor: Colors.white,
@@ -147,7 +147,7 @@ class _HomeState extends State<Home> {
                             right: MediaQuery.of(context).size.width * 0.04),
                         child: SizedBox(
                           height: MediaQuery.of(context).size.height * 0.04,
-                          child: Image.asset("assets/aboutus.png"),
+                          child: Image.asset("assets/images/aboutus.png"),
                         ),
                       )
                     ],
@@ -168,7 +168,7 @@ class _HomeState extends State<Home> {
               child: SizedBox(
                 height: MediaQuery.of(context).size.height * 0.1,
                 width: MediaQuery.of(context).size.width * 0.08,
-                child: Image.asset("assets/chat.png"),
+                child: Image.asset("assets/images/chat.png"),
               ),
             ),
           ),
