@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:sayabi_dev/Screens/ai_dev_screen.dart';
+import 'package:sayabi_dev/Screens/app_dev_screen.dart';
 import 'package:sayabi_dev/Screens/chat_screen.dart';
+import 'package:sayabi_dev/Screens/data_science_dev_screen.dart';
 import 'package:sayabi_dev/Screens/home.dart';
+import 'package:sayabi_dev/Screens/web_dev_screen.dart';
 
 animateRoutes(var route) {
   return PageRouteBuilder(
@@ -27,14 +31,14 @@ class RouteGenerator {
         return animateRoutes(const Home());
       case '/chat':
         return animateRoutes(const ChatScreen());
-      // case '/orders':
-      //   return animateRoutes(Order());
-      // case '/profile':
-      //   return animateRoutes(Profile());
-      // case '/address':
-      //   return animateRoutes(Address());
-      // case '/cart':
-      //   return animateRoutes(Cart());
+      case '/App Development':
+        return animateRoutes(const AppDevelopment());
+      case '/Web Development':
+        return animateRoutes(const WebDevelopment());
+      case '/AI Development':
+        return animateRoutes(const AIDevelopment());
+      case '/Data Science Dev':
+        return animateRoutes(const DataScience());
       default:
         return _errorRoute();
     }
