@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import '../models/chat_message_model.dart';
 
 class ChatScreen extends StatefulWidget {
@@ -12,6 +11,8 @@ class ChatScreen extends StatefulWidget {
 class _ChatScreenState extends State<ChatScreen> {
   List<ChatMessage> messages = [
     ChatMessage(messageContent: "Hello, sayabiDevs", messageType: "receiver"),
+    ChatMessage(
+        messageContent: "Hi there, Hi can we help you", messageType: "sender"),
   ];
 
   @override
@@ -36,8 +37,7 @@ class _ChatScreenState extends State<ChatScreen> {
                   width: 2,
                 ),
                 const CircleAvatar(
-                  backgroundImage: NetworkImage(
-                      "https://randomuser.me/api/portraits/women/8.jpg"),
+                  backgroundImage: AssetImage('assets/images/robot.png'),
                   maxRadius: 20,
                 ),
                 const SizedBox(
