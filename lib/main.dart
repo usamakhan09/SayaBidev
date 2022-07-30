@@ -1,6 +1,6 @@
 import 'package:animated_splash_screen/animated_splash_screen.dart';
 import 'package:flutter/material.dart';
-import 'package:sayabi_dev/Constants/splash_screen.dart';
+import 'package:sayabi_dev/Screens/splash_screen.dart';
 import 'package:sayabi_dev/Screens/home.dart';
 
 import 'Constants/routing.dart';

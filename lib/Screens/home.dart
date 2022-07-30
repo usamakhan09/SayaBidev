@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:sayabi_dev/Constants/chat_button.dart';
-import 'package:sayabi_dev/Constants/services.dart';
+import 'package:sayabi_dev/Constants/services/services.dart';
 
 class Home extends StatefulWidget {
   const Home({Key? key}) : super(key: key);
