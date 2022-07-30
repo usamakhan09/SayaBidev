@@ -22,7 +22,7 @@ class AppDevelopment extends StatelessWidget {
             onTap: () => Navigator.push(
               context,
               MaterialPageRoute(
-                builder: (context) => const ServiceDetails(
+                builder: (context) =>  const ServiceDetails(
                     imagePath: "assets/images/gold_medal.png",
                     package: "Gold Package",
                     header: "MOBILE APP DEVELOPMENT"),

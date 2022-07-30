@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:sayabi_dev/Constants/chat_button.dart';
 import 'package:sayabi_dev/Constants/services/services.dart';
+import 'package:sayabi_dev/Screens/aboutUs.dart';
 
 class Home extends StatefulWidget {
   const Home({Key? key}) : super(key: key);
@@ -105,6 +106,7 @@ class _HomeState extends State<Home> {
                       setState(() {
                         selecteditem = 'Our Services';
                       });
+                      setState(() {});
                       if (item != 'Our Services') {
                         Navigator.of(context).pushNamed('/$item');
                       }
@@ -122,30 +124,42 @@ class _HomeState extends State<Home> {
                     ),
                     width: double.infinity,
                     height: MediaQuery.of(context).size.height * 0.1,
-                    child: Row(
-                      children: [
-                        Padding(
-                          padding: EdgeInsets.only(
-                              left: MediaQuery.of(context).size.width * 0.02),
-                          child: Text(
-                            " About Us",
-                            style: TextStyle(
-                                fontSize:
-                                    MediaQuery.of(context).size.height * 0.035,
-                                fontWeight: FontWeight.bold,
-                                color: Colors.white),
+                    child: GestureDetector(
+                      onTap: () {
+                       Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) =>const AboutUs( ),
+                                
+                            ),
+                          );
+                      },
+                      child: Row(
+                        children: [
+                          Padding(
+                            padding: EdgeInsets.only(
+                                left: MediaQuery.of(context).size.width * 0.02),
+                            child: Text(
+                              " About Us",
+                              style: TextStyle(
+                                  fontSize: MediaQuery.of(context).size.height *
+                                      0.035,
+                                  fontWeight: FontWeight.bold,
+                                  color: Colors.white),
+                            ),
                           ),
-                        ),
-                        const Spacer(),
-                        Padding(
-                          padding: EdgeInsets.only(
-                              right: MediaQuery.of(context).size.width * 0.04),
-                          child: SizedBox(
-                            height: MediaQuery.of(context).size.height * 0.04,
-                            child: Image.asset("assets/images/aboutus.png"),
+                          const Spacer(),
+                          Padding(
+                            padding: EdgeInsets.only(
+                                right:
+                                    MediaQuery.of(context).size.width * 0.04),
+                            child: SizedBox(
+                              height: MediaQuery.of(context).size.height * 0.04,
+                              child: Image.asset("assets/images/aboutus.png"),
+                            ),
                           ),
-                        )
-                      ],
+                        ],
+                      ),
                     ),
                   ),
                 ),

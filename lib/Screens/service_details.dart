@@ -27,42 +27,49 @@ class ServiceDetails extends StatelessWidget {
             height: MediaQuery.of(context).size.height * 0.01,
           ),
           ServiceButton(text: package, imagePath: imagePath),
-          Padding(
-            padding: EdgeInsets.symmetric(
-                vertical: MediaQuery.of(context).size.height * 0.02,
-                horizontal: MediaQuery.of(context).size.width * 0.03),
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.start,
-              children: <Widget>[
-                Container(
-                  height: MediaQuery.of(context).size.height * 0.5,
-                  width: double.infinity,
-                  color: const Color(0xffF37777),
-                  child: const Text('a'),
-                ),
-                SizedBox(
-                  height: MediaQuery.of(context).size.height * 0.01,
-                ),
-                ElevatedButton(
-                  onPressed: null,
-                  style: ButtonStyle(
-                    minimumSize: MaterialStateProperty.all(Size(double.infinity,
-                        MediaQuery.of(context).size.height * 0.08)),
-                    backgroundColor: MaterialStateProperty.all(
-                        Theme.of(context).primaryColor),
+          Expanded(
+            child: Padding(
+              padding: EdgeInsets.symmetric(
+                  vertical: MediaQuery.of(context).size.height * 0.02,
+                  horizontal: MediaQuery.of(context).size.width * 0.03),
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.start,
+                children: <Widget>[
+                  Expanded(
+                    flex: 6,
+                    child: Container(
+                      height: MediaQuery.of(context).size.height * 0.5,
+                      width: double.infinity,
+                      color: const Color(0xffF37777),
+                      child: const Text('a'),
+                    ),
                   ),
-                  child: Text(
-                    "Order NOW",
-                    style: GoogleFonts.poppins(
-                      textStyle: TextStyle(
-                        color: Colors.white,
-                        fontSize: MediaQuery.of(context).size.height * 0.03,
-                        fontWeight: FontWeight.bold,
+                  SizedBox(
+                    height: MediaQuery.of(context).size.height * 0.01,
+                  ),
+                  Expanded(
+                    child: ElevatedButton(
+                      onPressed: (){},
+                      style: ButtonStyle(
+                        minimumSize: MaterialStateProperty.all(Size(double.infinity,
+                            MediaQuery.of(context).size.height * 0.08)),
+                        backgroundColor: MaterialStateProperty.all(
+                            Theme.of(context).primaryColor),
+                      ),
+                      child: Text(
+                        "Order NOW",
+                        style: GoogleFonts.poppins(
+                          textStyle: TextStyle(
+                            color: Colors.white,
+                            fontSize: MediaQuery.of(context).size.height * 0.03,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
                       ),
                     ),
                   ),
-                ),
-              ],
+                ],
+              ),
             ),
           ),
         ],
