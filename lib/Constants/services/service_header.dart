@@ -8,13 +8,13 @@ class ServiceHeader extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.only(left: MediaQuery.of(context).size.width * 0.1),
+      padding: EdgeInsets.only(left: MediaQuery.of(context).size.width * 0.07),
       child: Text(
         text,
         style: GoogleFonts.poppins(
           textStyle: TextStyle(
             color: Theme.of(context).primaryColor,
-            fontSize: MediaQuery.of(context).size.height * 0.04,
+            fontSize: MediaQuery.of(context).size.height * 0.038,
             fontWeight: FontWeight.bold,
           ),
         ),

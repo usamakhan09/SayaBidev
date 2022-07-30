@@ -24,7 +24,8 @@ class _ChatScreenState extends State<ChatScreen> {
         backgroundColor: Colors.red,
         flexibleSpace: SafeArea(
           child: Container(
-            padding: const EdgeInsets.only(right: 16),
+            padding: EdgeInsets.only(
+                right: MediaQuery.of(context).size.width * 0.02),
             child: Row(
               children: [
                 IconButton(
@@ -40,30 +41,30 @@ class _ChatScreenState extends State<ChatScreen> {
                   backgroundImage: AssetImage('assets/images/robot.png'),
                   maxRadius: 20,
                 ),
-                const SizedBox(
-                  width: 12,
+                SizedBox(
+                  width: MediaQuery.of(context).size.width * 0.04,
                 ),
                 Expanded(
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     mainAxisAlignment: MainAxisAlignment.center,
-                    children: const [
+                    children: [
                       Text(
                         "Robo Dev",
                         style: TextStyle(
-                          fontSize: 16,
+                          fontSize: MediaQuery.of(context).size.height * 0.025,
                           fontWeight: FontWeight.w600,
                           color: Colors.white,
                         ),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 6,
                       ),
                       Text(
                         "Online",
                         style: TextStyle(
                           color: Colors.white,
-                          fontSize: 11,
+                          fontSize: MediaQuery.of(context).size.height * 0.02,
                         ),
                       ),
                     ],
@@ -116,28 +117,18 @@ class _ChatScreenState extends State<ChatScreen> {
             alignment: Alignment.bottomLeft,
             child: Container(
               padding: const EdgeInsets.only(left: 10, bottom: 10, top: 10),
-              height: 60,
+              height: MediaQuery.of(context).size.height * 0.08,
               width: double.infinity,
               color: Colors.white,
               child: Row(
                 children: [
-                  GestureDetector(
-                    onTap: () {},
-                    child: Container(
-                      height: 30,
-                      width: 30,
-                      decoration: BoxDecoration(
-                        color: Colors.red,
-                        borderRadius: BorderRadius.circular(30),
-                      ),
-                      child:
-                          const Icon(Icons.add, color: Colors.white, size: 20),
-                    ),
-                  ),
                   const SizedBox(width: 15),
-                  const Expanded(
+                  SizedBox(
+                    width: MediaQuery.of(context).size.width * 0.75,
                     child: TextField(
-                      decoration: InputDecoration(
+                      style: TextStyle(
+                          fontSize: MediaQuery.of(context).size.height * 0.025),
+                      decoration: const InputDecoration(
                         hintText: "Write message...",
                         hintStyle: TextStyle(color: Colors.black54),
                         border: InputBorder.none,
@@ -151,10 +142,10 @@ class _ChatScreenState extends State<ChatScreen> {
                     onPressed: () {},
                     backgroundColor: Colors.red,
                     elevation: 0,
-                    child: const Icon(
+                    child: Icon(
                       Icons.send_rounded,
                       color: Colors.white,
-                      size: 18,
+                      size: MediaQuery.of(context).size.height * 0.03,
                     ),
                   ),
                 ],

@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
-class ServiceButon extends StatelessWidget {
+class ServiceButton extends StatelessWidget {
   final String text;
   final String imagePath;
-  const ServiceButon({Key? key, required this.text, required this.imagePath})
+  const ServiceButton({Key? key, required this.text, required this.imagePath})
       : super(key: key);
 
   @override
