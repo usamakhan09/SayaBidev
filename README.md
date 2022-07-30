@@ -5,3 +5,4 @@ Tasks Accomplished :
 2) Home Screen-> Usama Khan
 3) Chat Screen-> Abdur Rehman
 4) Service Screens -> Wahaj Javed
+5) Service Details -> Wahaj Javed
