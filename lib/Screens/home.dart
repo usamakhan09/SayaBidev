@@ -105,7 +105,9 @@ class _HomeState extends State<Home> {
                       setState(() {
                         selecteditem = 'Our Services';
                       });
-                      Navigator.of(context).pushNamed('/$item');
+                      if (item != 'Our Services') {
+                        Navigator.of(context).pushNamed('/$item');
+                      }
                     },
                   ),
                 ),
